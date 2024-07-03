@@ -11,12 +11,17 @@ public class StudentGroupIterator implements Iterator<Student> {
     private int index = 0;
 
     private Student[] getStudents(){
-        String[] names = studentGroup.students1.toString().split(" ");
+        String[] names = studentGroup.students.toString().split(" ");
+
+       // System.out.println("names: "+names);
         Student[] students = new Student[names.length];
-        int count = 0;
+       // System.out.println("students: "+ students);
+        int id = 0;
+        String room = null;
+
         for (String name:names){
-            students[count] = new Student(name, count);
-            count++;
+            students[id] = new Student(id, name, room);
+            id++;
         }
         return students;
     }

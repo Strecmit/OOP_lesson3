@@ -5,10 +5,9 @@ import java.util.Iterator;
 import java.util.List;
 
 public class StudentGroup implements Iterable<Student> {
-    public StringBuilder students1 = new StringBuilder();
-
+    public StringBuilder students = new StringBuilder();
     public void addStudents(Student student){
-        students1.append(student).append(' ');
+        students.append(student).append(' ');
     }
 
     @Override
