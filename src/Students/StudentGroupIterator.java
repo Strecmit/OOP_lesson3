@@ -11,7 +11,7 @@ public class StudentGroupIterator implements Iterator<Student> {
     private int index = 0;
 
     private Student[] getStudents(){
-        String[] names = studentGroup.students.toString().split(" ");
+        String[] names = studentGroup.students1.toString().split(" ");
         Student[] students = new Student[names.length];
         int count = 0;
         for (String name:names){
