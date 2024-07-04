@@ -16,7 +16,7 @@ public class Student implements Comparable<Student>{
     public String toString(){
         return name;
     }
-    public String getName(){return  name;}
+    public String getName(){return  name;} //дублирование student.name и др...
 
     public String getRoom(){ return room;}
     public int getId(){return id;}

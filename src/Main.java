@@ -1,14 +1,10 @@
 import Students.Student;
-import Students.StudentIdComparator;
 import Students.StudentGroup;
-import Students.StudentGroupIterator;
 
 import java.util.*;
-
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
-
 
     public static void main(String[] args) {
 
@@ -23,10 +19,6 @@ public class Main {
                 return o1.id - o2.id;
             }
         };
-
-
-
-
 
         StudentGroup studentGroup1 = new StudentGroup();
         StudentGroup studentGroup2 = new StudentGroup();
@@ -76,7 +68,7 @@ public class Main {
         //Collections.sort(arrayList, new StudentComparator());
         Collections.sort(arrayList1);// Длина имени???
         System.out.println(arrayList1);
-        Collections.sort(arrayList1, compareById);
+        Collections.sort(arrayList1, compareById);// сортировка по id
         System.out.println("sort by ID: "+arrayList1);
 
         for (int i = 0; i < arrayList1.size(); i++){
